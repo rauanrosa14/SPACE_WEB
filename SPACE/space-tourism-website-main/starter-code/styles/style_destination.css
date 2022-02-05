@@ -1,0 +1,141 @@
+
+body{
+    background-image: url("/SPACE/space-tourism-website-main/starter-code/assets/destination/background-destination-desktop.jpg");
+}
+
+.fa-bars{
+    display: none;
+}
+
+hr{
+    margin: 20px;
+}
+
+
+/*SECTION PAGES*/
+
+.planet{
+    margin: auto;
+    width: 50%;
+    padding: 5vw;
+}
+/* SECTIONS */
+
+
+
+/*DEST PAGE*/
+
+.destinaion-det{
+    width: 80%;
+    padding-left: 20px;
+    margin: 40% auto;
+   
+    height: auto;
+    border: 1px solid white;
+}
+
+/*MENU DEST*/
+.destination-list{
+    margin-top: 25%;
+    display: flex;
+    list-style: none;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.destination-list li:hover{
+    border-bottom: 3px solid rgba(255,255,255,0.7);;
+    
+}
+
+
+#dest-nome{
+    font-size: 7rem;
+    margin-left: 15px;
+    font-family: "Quicksand","Abel";
+    letter-spacing: 5px;
+}
+
+#dest-text{
+    padding: 15px;
+    font-size: 1.3rem;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-family: "Quicksand", sans-serif;
+}
+
+.dest-footer {
+    margin-left: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dest-footer p{
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.2rem;
+}
+
+.dest-footer h3{
+    font-size: 2rem;
+    font-family: "Zen Kureinado";
+    letter-spacing: 1px;
+}
+
+.dest-h1{
+    margin-bottom: 3vh;
+    font-size: 2.3rem;
+    font-family: "Quicksand","Nanum Gothic",sans-serif;
+}
+
+
+
+/*MEDIA  DESTINATION*/
+@media (max-width: 1000px){
+
+    .planet{
+        padding: 0;
+    }
+    body{
+        background-image: url("/SPACE/space-tourism-website-main/starter-code/assets/destination/background-destination-tablet.jpg");
+        align-items: center;
+    }
+    .destinaion-det{
+        width: 100%;
+        margin: auto;
+
+    }
+
+    .destination-list li{
+        font-size: 1.8rem;
+    }
+    .planet-img{
+        width: 60vw;
+        margin: 20px;
+    }
+
+    .fa-bars{
+        color: white;
+        display: block;
+    }
+
+    
+}
+
+@media (max-width: 650px){
+    body{
+        background-image: url("/SPACE/space-tourism-website-main/starter-code/assets/destination/background-destination-mobile.jpg");
+    }
+    .planet-img{
+        margin: 0;
+        padding: 0;
+        width: 70vw;
+    }
+
+    
+    .dest-h1{
+        font-size: 1.3rem;
+    box-shadow: 1px 2px 3px  black;
+        
+    }
+}
+

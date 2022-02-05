@@ -1,0 +1,216 @@
+:root{
+    --margin-flex : 7px;
+}
+
+body{
+    background-image: url("/SPACE/space-tourism-website-main/starter-code/assets/crew/background-crew-desktop.jpg");
+}
+
+
+.crew-profile{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;;
+    color: white;
+}
+
+.crew-flex{
+    
+    margin-top: 10vh;
+    min-width: 350px;
+    width: 500px;
+}
+
+.crew-flex img{
+    width: 400px;
+    height: 500px;
+}
+
+.crew-h2{
+    font-size: 2.3rem;
+    font-family: "Quicksand","Nanum Gothic",sans-serif;
+    margin-bottom:  8vh;
+}
+
+.crew-job{
+    font-size: 2.0rem;
+    letter-spacing: 2px;
+    font-family: "Abel";
+    margin: var(--margin-flex);
+}
+.crew-name{
+    font-size: 3.3rem;
+    letter-spacing: 3px;
+    font-family: "Abel",Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 4vh;
+    margin: var(--margin-flex);
+}
+
+.crew-des{
+    width: 80%;
+    margin: var(--margin-flex);
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+}
+
+
+/*SLIDE DIV */
+.div-list{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-around;
+}
+.div-list-mobile{
+    display: none;
+}
+.btn-slide{
+    width: 40px;
+    height: 10px;
+    top:2vh;
+    border: 1px solid white;
+}
+
+.btn-slide:hover{
+    background-color:white;
+}
+
+input[type="radio"]{
+    display: none;
+}
+/* SLIDE */
+
+.crew-profile{
+    transition: translateX(-50%);
+    transition-duration: 2s;
+display: none;}
+/*   */
+#r1:checked ~ .crew-guy-1 .crew-profile{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;;
+    color: white;
+}
+
+#r2:checked ~ .crew-guy-2 .crew-profile{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;;
+    color: white;
+}
+
+#r3:checked ~ .crew-guy-3 .crew-profile{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;;
+    color: white;
+}
+
+#r4:checked ~ .crew-guy-4 .crew-profile{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 10px;;
+    color: white;
+}
+
+
+@media screen and (max-width:1000px){
+    body{
+        background-image: url("/SPACE/space-tourism-website-main/starter-code/assets/crew/background-crew-tablet.jpg");
+    }
+
+    .crew-profile{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .div-list{
+        display: none;
+    }
+
+    .div-list-mobile{
+        margin-top: 5vh;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .crew-h2{
+        text-align: center;
+        width: 100%;
+        padding-left: 10px;;
+    }
+    .crew-job{
+        text-align: center;
+        width: 100%;
+        padding-left: 10px;;
+    }
+    .crew-name{
+        text-align: center;
+        width: 100%;
+        padding-left: 10px;;
+    }
+    
+    .crew-des{
+        text-align: center;
+        width: 100%;
+        padding-left: 10px;;
+    }
+}
+
+@media (max-width:650px){
+    .crew-h2{
+       font-size: 1.9rem;
+    }
+    .crew-job{
+        font-size: 1.7rem;
+    }
+    .crew-name{
+        line-height: 2;
+        font-size: 1.5rem;
+    }
+    
+    .crew-des{
+        font-size: 1rem;
+        width: 80%;;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
+
+@media (max-width:430px){
+    .crew-h2{
+       font-size: 1.2rem;
+    }
+    .crew-job{
+        font-size: 0.7rem;
+    }
+    .crew-name{
+        line-height: 2;
+        font-size: 0.5rem;
+    }
+    
+    .crew-des{
+        font-size: 1rem;
+        width: 70%;;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}

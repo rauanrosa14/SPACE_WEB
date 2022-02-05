@@ -1,0 +1,335 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-image: url("/SPACE/space-tourism-website-main/starter-code/assets/home/background-home-desktop.jpg");
+    background-repeat: no-repeat;
+    width:100vw;
+    height: auto;
+    
+    min-height: 100vh;
+    background-size: cover;
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.header-a:hover{
+    border-bottom: 1px solid rgba(255,255,255,0.7);
+}
+
+.fa-bars{
+    display: none;
+}
+
+
+
+/* HEADER */
+
+.header{
+    width:100%;
+    height:10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu-check{
+    display: none;
+}
+
+.logo-img{
+    margin:1vh 1vw ;
+}
+/*MENU CSS*/
+/* MENU */
+nav{
+    float:right;
+    display: flex;
+    align-items: flex-end;
+}
+.nav-list{
+    margin-top: 2rem;
+    float:right;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(250,250,250,.2);
+    backdrop-filter: blur(5px);
+    width: 50vw;
+}
+
+li{
+    margin: 1rem;
+    padding: 5px;
+    color: white;
+    font-size: 2.5vh;
+    transition: 1.3s;
+    font-family: "Roboto Condensed";
+}
+
+
+/* MAIN */
+
+.main{
+    display: flex;
+    color:white;
+    width: 98%;;
+
+    margin: auto;
+}
+
+.main-h3{
+    font-size: 1.9rem;
+    
+    letter-spacing: 8px;
+    font-family: "Oswald";
+}
+
+.main-h1{
+    line-height: 2;
+    font-size: 11rem;
+    text-align: left;
+    font-family: "Abel";
+    letter-spacing: 5px;
+}
+
+.main-p{
+    text-align: justify;
+    font-family: "Oswald";
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+.logo{
+    margin: 10% auto auto auto;
+    width: 40%;
+    padding: 5vh;
+}
+
+.explore{
+    margin: 15% auto auto auto;
+    background-color:white;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 50%;
+    position: relative;
+    transition: 1s ease-in;
+}
+
+.explore:hover{
+    width: 300px;
+    height: 300px;
+}
+
+.explore:hover p{
+    font-style: bold;
+    font-size: 2.3rem;
+}
+.explore-p{
+    
+    transition-duration: 1.5s;
+    color: black;
+    position: absolute;
+    right: 33%;
+    top:43%;
+    font-size: 1.8rem;
+    font-family: "Abel";
+}
+
+
+label{
+    cursor: pointer;
+}
+
+/* ASTEROIDES */
+.asteroide{
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    
+}
+
+
+.asteroide img{
+    width: 140px;
+    height: 140px;
+    animation: asteroide 12s infinite linear;
+
+}
+
+#img-1{
+    position: absolute;
+    top: 200px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    animation: asteroide 10s infinite linear;
+}
+
+#img-2{
+    position: absolute;
+    top: -50px;
+    left:0px;
+    width: 100px;
+    height: 100px;
+    animation: asteroide 14s infinite linear;
+}
+
+
+@keyframes asteroide{
+    0%{
+        transform: translateX(0vh);
+        opacity: .6;
+    }
+    25%{
+        opacity: .7;
+    }
+    50%{
+        opacity: .5;
+    }
+    75%{
+        opacity: .4;
+    }
+    100%{
+        transform: translate(100vw,100vh);
+        opacity: .2;
+    }
+}
+
+/* media */
+
+@media (max-width: 1000px){
+
+    body{
+        overflow: auto;
+        overflow-x: hidden;
+        background-image: url("/SPACE/space-tourism-website-main/starter-code/assets/home/background-home-tablet.jpg");
+    }
+
+    
+    i{
+        margin:40px;
+        width:2em;
+        display:block;
+        color:white;
+    }
+
+    .nav-list{
+        display: none;
+    }
+
+    input#menu-check:checked ~ ul{
+        position:absolute;
+        margin-top: 7vh;
+        top:1vh;
+        background-color: white;
+        right: 0;
+        width:50vw;
+        height: 70vh;
+        background: rgba(250,250,250,.2);  
+        backdrop-filter: blur(5px);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    input#menu-check:checked ~ ul li{
+        margin: 20px auto 30px auto;
+    }
+   
+    #menu-check:checked ~ h1{
+        background-color: blue;
+        border: 7px solid white;
+        color:brown;
+    }
+
+    .fa-bars{
+        display: block;
+    }
+
+    .nav-list li{
+         margin: auto;
+    }
+
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+
+    .logo{
+        min-width: 550px;
+    }
+
+.asteroide img{
+    width: 140px;
+    height: 140px;
+    animation: asteroide 6s infinite linear;
+
+}
+
+#img-1{
+    position: absolute;
+    top: 200px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    animation: asteroide 4s infinite linear;
+}
+
+#img-2{
+    position: absolute;
+    top: -50px;
+    left:0px;
+    width: 100px;
+    height: 100px;
+    animation: asteroide 8s infinite linear;
+}
+
+
+}
+/*media (min-width 400px) and (max-width:800px)*/
+
+@media (max-width:630px){
+    body{
+        background-image: url("/SPACE/space-tourism-website-main/starter-code/assets/home/background-home-mobile.jpg");
+    }
+    
+    .asteroide{
+        display: none;
+    }
+
+    .main-h3{
+        font-size: 1.7rem;
+    }
+    
+    .main-h1{
+        font-size: 5.2rem;
+    }
+    
+    .main-p{
+        font-size: 1.3rem;
+    }
+
+    .logo{
+        min-width: 80%;
+    }
+}
